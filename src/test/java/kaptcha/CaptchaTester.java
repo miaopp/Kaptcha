@@ -33,5 +33,6 @@ public class CaptchaTester {
         File file = new File(parent, "kaptcha.jpg");
         FileOutputStream out = new FileOutputStream(file);
         ImageIO.write(bufferedImage, "jpg", out);
+
     }
 }

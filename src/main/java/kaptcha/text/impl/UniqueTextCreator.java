@@ -10,7 +10,7 @@ import java.util.Set;
 /**
  * Created by xiang.xu on 2015/2/25.
  */
-public class ChineseTextCreator extends Configurable implements TextProducer {
+public class UniqueTextCreator extends Configurable implements TextProducer {
     @Override
     public String getText() {
         int length = getConfig().getTextProducerCharLength();
