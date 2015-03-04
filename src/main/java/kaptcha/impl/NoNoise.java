@@ -10,13 +10,11 @@ import kaptcha.util.Configurable;
  * 
  * @author Yuxing Wang
  */
-public class NoNoise extends Configurable implements NoiseProducer
-{
-	/**
+public class NoNoise extends Configurable implements NoiseProducer {
+    /**
 	 */
-	public void makeNoise(BufferedImage image, float factorOne,
-			float factorTwo, float factorThree, float factorFour)
-	{
-		//Do nothing.
-	}
+    public void makeNoise(BufferedImage image, float factorOne, float factorTwo, float factorThree,
+            float factorFour) {
+        //Do nothing.
+    }
 }
