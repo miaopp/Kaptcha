@@ -1,11 +1,11 @@
 package kaptcha.text.impl;
 
-import com.google.common.collect.Sets;
 import kaptcha.text.TextProducer;
 import kaptcha.util.Configurable;
 
 import java.util.Random;
 import java.util.Set;
+import java.util.TreeSet;
 
 /**
  * Created by xiang.xu on 2015/2/25.
@@ -16,7 +16,7 @@ public class UniqueTextCreator extends Configurable implements TextProducer {
         int length = getConfig().getTextProducerCharLength();
         char[] chars = getConfig().getTextProducerCharString();
         Random random = new Random();
-        Set<Character> word = Sets.newTreeSet();
+        Set<Character> word = new TreeSet<Character>();
         while (word.size() < length) {
             word.add(chars[random.nextInt(chars.length)]);
         }

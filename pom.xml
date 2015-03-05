@@ -12,19 +12,11 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <guava.version>17.0</guava.version>
         <junit.version>4.11</junit.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-            <!--google guava-->
-            <dependency>
-                <groupId>com.google.guava</groupId>
-                <artifactId>guava</artifactId>
-                <version>${guava.version}</version>
-            </dependency>
-
             <!--junit-->
             <dependency>
                 <groupId>junit</groupId>
@@ -43,12 +35,6 @@
     </dependencyManagement>
 
     <dependencies>
-        <!--google guava-->
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-        </dependency>
-
         <!--junit-->
         <dependency>
             <groupId>junit</groupId>
